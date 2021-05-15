@@ -1,0 +1,17 @@
+.head {
+    display: flex;
+    flex-direction: row;  
+    width: 97%;  
+    align-items: center;
+    margin-top: 5%
+}
+
+.logo {
+    flex-grow:2;
+    align-self:center;
+}
+
+
+
+
+

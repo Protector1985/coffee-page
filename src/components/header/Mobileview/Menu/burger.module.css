@@ -1,0 +1,8 @@
+@media (min-width: 415px) {
+    .symbol {
+        display:none;
+        flex-grow: 1;
+        align-self: center;
+    }
+}
+
