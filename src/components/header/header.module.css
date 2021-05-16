@@ -1,17 +1,44 @@
-.head {
-    display: flex;
-    flex-direction: row;  
-    width: 97%;  
-    align-items: center;
-    margin-top: 5%
+.menubar {
+    display:flex;
+    flex-direction: row;
+    margin-top:7%;
 }
 
-.logo {
-    flex-grow:2;
-    align-self:center;
+.brand {
+    flex-grow: 4;
+    margin-left: 4%;
 }
 
 
+@media (max-width:767px) {
+    .linkItem {
+        font-size:13px;
+        margin-left:3%;
+    }
+
+}
+
+
+
+@media (min-width: 768px) {
+    .logo {
+        margin-bottom: 3px;
+    }
+    .linkItem {
+        margin-left:none;
+        font-size:13px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo {
+        margin-bottom: 3px;
+    }
+    .linkItem {
+        margin-left:none;
+        font-size:16px;
+    }
+}
 
 
 
