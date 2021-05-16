@@ -1,0 +1,17 @@
+.pictureContainer {
+    text-align:center;
+    position:relative; 
+    color: white;
+    width:90%;
+}
+
+.picture {
+    border-radius: 25px;
+    width:100%;  
+}
+
+.text {
+    position:absolute;
+    top:25%;
+    
+}

@@ -1,13 +1,10 @@
-import { logDOM } from '@testing-library/react'
 import React, {Fragment} from 'react'
-import ReactDOM from 'react-dom';
 import {Navbar, NavbarBrand, Nav, NavLink, Collapse, NavItem, NavbarToggler } from 'reactstrap'
 
 import Toggler from './Menubar/Menu/Toggler'
 import {ReactComponent as Logo} from '../../assets/shared/desktop/logo.svg'
 import headerCSS from './header.module.css'
 import useDimensions from '../utility/sizing/useDimensions'
-import {ReactComponent as Symbol} from '../../assets/shared/mobile/icon-hamburger.svg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Header() {
