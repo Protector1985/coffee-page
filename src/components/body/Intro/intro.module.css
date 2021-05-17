@@ -1,3 +1,5 @@
+
+
 .pictureContainer {
     text-align:center;
     position:relative; 
@@ -10,8 +12,92 @@
     width:100%;  
 }
 
-.text {
-    position:absolute;
-    top:25%;
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .headline {
+        font-family: 'Fraunces', serif;
+        font-size: 48px;
+        margin-left: 5%;
+        text-align:left;
+        text-justify:inter-word;
+        width:60%;
+        
+    }
     
+    .paragraph {
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.1rem;
+        color:#FEFCF7;
+        text-align:left;
+        text-justify:inter-word;
+        margin-top:4%;
+        margin-left:5%;
+        opacity: 0.8;
+        width:53%;
+    
+    }
+    .text {
+        position:absolute;
+        top:13%;
+        
+    }
+
+}
+
+@media (max-width: 414px) {
+    .headline {
+        font-family: 'Fraunces', serif;
+        font-size: 2.9rem;
+        margin-left: 2%;
+        margin-right: 2%;
+        
+    }
+    
+    .paragraph {
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.1rem;
+        color:#FEFCF7;
+        text-align:center;
+        text-justify:inter-word;
+        margin-top:8%;
+        margin-left:5%;
+        margin-right:5%;
+        opacity: 0.8;
+    
+    }
+    .text {
+        position:absolute;
+        top:20%;
+        
+    }
+
+}
+
+@media (max-width: 320px) {
+    .headline {
+        font-family: 'Fraunces', serif;
+        font-size: 2.5rem;
+        margin-left: 2%;
+        margin-right: 2%;
+        
+    }
+    
+    .paragraph {
+        font-family: 'Barlow', sans-serif;
+        font-size: 0.9rem;
+        color:#FEFCF7;
+        text-align:center;
+        text-justify:inter-word;
+        margin-top:8%;
+        margin-left:5%;
+        margin-right:5%;
+        opacity: 0.8;
+    
+    }
+    .text {
+        position:absolute;
+        top:20%;
+        
+    }
 }

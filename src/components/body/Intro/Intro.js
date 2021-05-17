@@ -7,7 +7,9 @@ function Intro() {
         <div className={introCSS.pictureContainer}>
             <img className={introCSS.picture} src={CoffeePressPicture} alt="Girl in a jacket" /> 
             <div className={introCSS.text}>
-                <h1>Great coffee made simple.</h1>
+                <h1 className={introCSS.headline}>Great coffee made simple.</h1>
+                <p className={introCSS.paragraph}>Start your mornings with the world’s best coffees. Try our expertly curated artisan 
+                                                  coffees from our best roasters delivered directly to your door, at your schedule.</p>
             </div>
             
             
