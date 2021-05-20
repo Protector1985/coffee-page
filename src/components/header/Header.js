@@ -18,15 +18,23 @@ function Header() {
         if(width <= 414 && width > 330 ) {
             svgRef.current.setAttribute('viewBox',"110 -5 42 42")
             svgRef.current.setAttribute('width', "180")
+            svgRef.current.setAttribute('height', "27")
         } else if(width > 414 && width < 768 ) {
             svgRef.current.setAttribute('width',"237")
             svgRef.current.setAttribute('viewBox',"110 0 30 30")
+            svgRef.current.setAttribute('height', "27")
         }  else if (width < 330 ) {
             svgRef.current.setAttribute('viewBox',"110 -5 42 42")
             svgRef.current.setAttribute('width', "180")
-        } else if (width >= 768 ) {
+            svgRef.current.setAttribute('height', "27")
+        } else if (width >= 768 && width <= 1024 ) {
             svgRef.current.setAttribute('viewBox', null)
             svgRef.current.setAttribute('width', "237")
+            svgRef.current.setAttribute('height', "27")
+        } else if (width >= 1025 ) {
+            svgRef.current.setAttribute('viewBox', "100 -5 40 40")
+            svgRef.current.setAttribute('width', "600")
+            svgRef.current.setAttribute('height', "100")
         } 
     },[width])
     
@@ -36,10 +44,10 @@ function Header() {
         <Navbar className={headerCSS.menubar} color="light" light expand="md">
             <NavbarBrand className={headerCSS.brand}><Logo className={headerCSS.logo} ref={svgRef} /></NavbarBrand>
             <Toggler setOpenState={setOpenState}></Toggler>
-            <Collapse isOpen={openState} navbar>
-            <Nav className="mr-auto" navbar>
+            <Collapse className= {headerCSS.menuItemContainer} isOpen={openState} navbar>
+            <Nav className={`mr-auto`} navbar>
                 <NavItem>
-                    <NavLink className={headerCSS.linkItem} href="/components/">HOME</NavLink>
+                    <NavLink className={`${headerCSS.linkItem} ${headerCSS.firstItem}`} href="/components/">HOME</NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink className={headerCSS.linkItem} href="/components/">ABOUT US</NavLink>

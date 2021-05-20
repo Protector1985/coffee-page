@@ -1,0 +1,12 @@
+.container {
+    position: absolute;
+}
+
+
+@media (max-width: 320px) {
+    .container {
+
+    }
+
+}
+
