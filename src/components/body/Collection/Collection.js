@@ -12,6 +12,7 @@ function Collection() {
 
     return (
         <div className={collectionCSS.container}>
+            <h4 className={collectionCSS.headline}>our collection</h4>
             <ul>
                 <li>
                     <img src={granEspresso} alt="Gran Espresso Picture" />

@@ -1,11 +1,23 @@
 .container {
-    position: absolute;
+    position: relative;
+    text-align:center;
+}
+
+.headline {
+    font-family: 'Fraunces', serif;
+    margin-top: 60px;
+    margin-bottom:35px;
+    background: -webkit-linear-gradient(rgb(71, 71, 71) 1%, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+
 }
 
 
 @media (max-width: 320px) {
-    .container {
-
+    .headline {
+        font-size: 2.3rem;
     }
 
 }
