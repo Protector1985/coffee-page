@@ -7,8 +7,6 @@ import {Button} from 'reactstrap'
 
 import useDimensions from '../../utility/sizing/useDimensions'
 
-
-
 function Intro() {
     
     const {width, height} = useDimensions()
