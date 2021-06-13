@@ -1,14 +1,16 @@
 .toggleButton {
+    left:5%;
     margin-right: 5%;
-    border:none;
+    border: none;
 }
 
 .navbar-light.navbar-toggler {
-    border:none;
+    border:1px;
 }
 
 .burgersymbol {
-    margin-bottom: 3px
+    margin-bottom: 3px;
+    
 }
 
 

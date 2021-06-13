@@ -13,11 +13,46 @@
     font-weight: bold;
 }
 
+.subhead {
+    font-family: 'Fraunces', serif;
+    color: #333D4B;
+}
+
+.container ul {
+    padding-left:0;
+}
+
+.txt {
+    color: #333D4B;
+}
+
+@media (max-width: 768px) {
+    .pic {
+        width:65vw;
+        margin-right: -15px;
+    }
+    .headline {
+        font-size: 45px;
+    }
+
+    .subhead {
+        font-size: 32px
+    }
+    
+    .txt {
+        font-size: 19px;
+        width: 90%;
+        margin: 15px auto 55px auto
+    }
+}
+
 
 @media (max-width: 320px) {
     .headline {
         font-size: 2.3rem;
     }
+
+    
 
 }
 
