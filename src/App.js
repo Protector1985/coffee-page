@@ -8,14 +8,19 @@ import Footer from './components/footer/Footer'
 
 function App() {
   return (
-    <Fragment>
       <div className={masterCSS.container}>
+
+      
+     
         <Header />
         <Body />
         <Footer />
+   
       </div>
       
-    </Fragment>
+    
+    
+    
   );
 }
 

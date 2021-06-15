@@ -1,0 +1,43 @@
+
+
+.container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.headlineMain {
+    margin-bottom: 65px;
+    font-family: 'Fraunces', serif;
+    color: #83888F;
+    font-size: 30px;
+    
+}
+
+@media (max-width: 767px) {
+    .headlineMain {
+        text-align:center;
+        margin-top: 700px
+    }
+}
+
+@media (min-width: 768px) {
+    .headlineMain {
+        text-align: left;
+        margin-top: 360px;
+        margin-left:39px;
+        font-size: 25px;
+    }
+
+    .container {
+        justify-content:flex-start;
+        margin-left: 40px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .headlineMain {
+        margin-top:200px;
+    }
+}

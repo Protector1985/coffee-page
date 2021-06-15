@@ -3,6 +3,6 @@
     flex-direction:row;
     justify-content: center;
     margin-top:7%;
-    position: relative;
+    position: absolute;
     flex-wrap:wrap;
 }

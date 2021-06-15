@@ -8,7 +8,7 @@
 
 .picture {
     border-radius: 25px;
-    max-width:90vw;
+    width:100%;
 }
 
 .planButton {
@@ -33,7 +33,7 @@
 
 @media (min-width: 1025px) {
     .headline {
-        font-size: 6.2rem;
+        font-size:48px;
         margin-left: 5%;
         text-align:left;
         text-justify:inter-word;
@@ -42,7 +42,7 @@
     }
     
     .paragraph {
-        font-size: 2.6rem;
+        font-size: 1.1rem;
         text-align:left;
         margin-top:4%;
         margin-left:5%;
@@ -58,13 +58,12 @@
     }
 
     .planButton {
-        width: 400px;
+        width: 290px;
         height: 80px;
         font-family: 'Fraunces', serif;
-        font-size: 1.1rem;
         margin-left: 5%;
         margin-top: 2%;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
 }
