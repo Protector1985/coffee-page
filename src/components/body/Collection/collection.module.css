@@ -63,7 +63,7 @@ ul {
 @media (min-width: 768px) and (max-width: 1025px) {
     .pic {
         float:left;
-        width: 40vw;
+        width: 250px;
     }
     .listContainer {
         height: 300px;
@@ -87,7 +87,7 @@ ul {
 
 @media (max-width: 767px) {
     .pic {
-        width:65vw;
+        width:250px;
         margin-right: -15px;
     }
     .headline {

@@ -15,7 +15,11 @@
     background-color: #0E8784;
 }
 
-.headline {
+.headlineLg {
+    font-family: 'Fraunces', serif;  
+}
+
+.headlineSm {
     font-family: 'Fraunces', serif;  
 }
 
@@ -32,8 +36,17 @@
 }
 
 @media (min-width: 1025px) {
-    .headline {
+    .headlineLg {
         font-size:48px;
+        margin-left: 5%;
+        text-align:left;
+        text-justify:inter-word;
+        width:39%;
+        
+    }
+
+    .headlineSm {
+        font-size:35px;
         margin-left: 5%;
         text-align:left;
         text-justify:inter-word;
@@ -70,8 +83,17 @@
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .headline {
+    .headlineLg {
         font-size: 48px;
+        margin-left: 5%;
+        text-align:left;
+        text-justify:inter-word;
+        width:60%;
+        
+    }
+
+    .headlineSm {
+        font-size: 35px;
         margin-left: 5%;
         text-align:left;
         text-justify:inter-word;
@@ -106,8 +128,15 @@
 }
 
 @media (min-width: 356px) and (max-width: 767px) {
-    .headline {
+    .headlineLg {
         font-size: 2.9rem;
+        margin-left: 2%;
+        margin-right: 2%;
+        
+    }
+
+    .headlineSm {
+        font-size: 2.2rem;
         margin-left: 2%;
         margin-right: 2%;
         
@@ -138,8 +167,16 @@
 }
 
 @media (min-width: 289px) and (max-width: 355px) {
-    .headline {
+    .headlineLg {
         font-size: 2.5rem;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 12%;
+        
+    }
+
+    .headlineSm {
+        font-size: 1.9rem;
         margin-left: 2%;
         margin-right: 2%;
         margin-top: 12%;
@@ -171,8 +208,16 @@
 
 @media (max-width: 288px) { 
 
-    .headline {
+    .headlineLg {
         font-size: 1.5rem;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: -8%;
+        
+    }
+
+    .headlineSm {
+        font-size: 0.9rem;
         margin-left: 2%;
         margin-right: 2%;
         margin-top: -8%;
@@ -205,8 +250,16 @@
 
 
 @media (max-width: 204px) { 
-    .headline {
+    .headlineLg {
         font-size: 1rem;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: -15%;
+        
+    }
+
+    .headlineSm {
+        font-size: 0.5rem;
         margin-left: 2%;
         margin-right: 2%;
         margin-top: -15%;

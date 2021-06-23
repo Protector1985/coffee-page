@@ -5,6 +5,7 @@
     margin-top:7%;
     position: absolute;
     flex-wrap:wrap;
+    width: 100vw;
 }
 
 .push {

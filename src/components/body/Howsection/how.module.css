@@ -39,5 +39,11 @@
 @media (min-width: 1025px) {
     .headlineMain {
         margin-top:200px;
+        margin-left:5%;
+       
+    }
+    
+    .container {
+        margin-left: 5%;
     }
 }

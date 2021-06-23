@@ -9,6 +9,7 @@
     position:absolute;
     width:90vw;
     height: 300px;
+    
 }
 
 .link {
@@ -30,4 +31,37 @@
 
 .social {
     margin: 15px 10px;
+}
+
+@media (min-width: 1025px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        height: 150px;
+        justify-content: flex-start;
+        padding-left: 7%;
+    }
+
+    .nav {
+        margin-right: 29%;   
+    }
+
+    .socialContainer {
+        margin-bottom: 14px
+    }
+
+    .logo {
+        left: 0px;
+        margin-right: 5%;
+        margin-top:17px;
+    }
+    
+}
+
+
+@media (min-width: 1025px) and (max-width: 1300px) {
+    .nav {
+        margin-right: 12%;
+    }
+
 }

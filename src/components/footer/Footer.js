@@ -5,12 +5,18 @@ import {ReactComponent as Logo} from '../../assets/shared/desktop/logoWhite.svg'
 import {ReactComponent as Facebook} from '../../assets/shared/desktop/icon-facebook.svg'
 import {ReactComponent as Instagram} from '../../assets/shared/desktop/icon-instagram.svg'
 import {ReactComponent as Twitter} from '../../assets/shared/desktop/icon-twitter.svg'
+import useDimensions from '../utility/sizing/useDimensions'
 
 function Footer() {
+    const {height, width} = useDimensions()
+
+    console.log(width)
+    
+
     return (
         <footer className={footerCSS.container}>
             <Logo className={footerCSS.logo} />
-             <Nav vertical>
+             <Nav className={footerCSS.nav} vertical={width >= 1025 ? false : true} >
                 <NavItem>
                     <NavLink className={footerCSS.link} href="#">HOME</NavLink>
                 </NavItem>
@@ -21,7 +27,7 @@ function Footer() {
                     <NavLink className={footerCSS.link} href="#">CREATE YOUR PLAN</NavLink>
                 </NavItem>
             </Nav>
-           <span><Facebook className={footerCSS.social} /> <Instagram className={footerCSS.social} /> <Twitter className={footerCSS.social} /></span>
+           <span className= {footerCSS.socialContainer}><Facebook className={footerCSS.social} /> <Instagram className={footerCSS.social} /> <Twitter className={footerCSS.social} /></span>
         </footer>
         
     )

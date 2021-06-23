@@ -1,23 +1,38 @@
 import React from 'react';
-import CoffeePressPictureMobile from '../../../assets/home/mobile/image-hero-coffeepress.jpg'
-import CoffeePressPictureTablet from '../../../assets/home/tablet/image-hero-coffeepress.jpg'
-import CoffeePressPictureDesktop from '../../../assets/home/desktop/image-hero-coffeepress.jpg'
 import introCSS from './intro.module.css'
 import {Button} from 'reactstrap'
 
 import useDimensions from '../../utility/sizing/useDimensions'
 
-function Intro() {
+function Intro({pictureArr, headline, paragraph, btn, headlineSize}) {
     
     const {width, height} = useDimensions()
+    
     function getImage(width) {
+        for(let i = 0 ;i < pictureArr.length ; i ++) {
+            if(width < 768) {
+                if(pictureArr[i].type === "MOBILE") {
+                    return <img className={introCSS.picture} src={pictureArr[i].pic} alt={`Coffee Press ${pictureArr[i].type}`} /> 
+                }
+                
+            } else if (width < 1024) {
+                if(pictureArr[i].type === "TABLET") {
+                    return <img className={introCSS.picture} src={pictureArr[i].pic} alt={`Coffee Press ${pictureArr[i].type}`} /> 
+                }
+            } else {
+                if(pictureArr[i].type === "DESKTOP") {
+                    return <img className={introCSS.picture} src={pictureArr[i].pic} alt={`Coffee Press ${pictureArr[i].type}`} /> 
+                }
+            }
 
-        if(width < 768) {
-            return <img className={introCSS.picture} src={CoffeePressPictureMobile} alt="Coffee Press Mobile" /> 
-        } else if (width < 1024) {
-            return <img className={introCSS.picture} src={CoffeePressPictureTablet} alt="Coffee Press Tablet" /> 
-        } else {
-            return <img className={introCSS.picture} src={CoffeePressPictureDesktop} alt="Coffee Press Desktop" />
+        }
+    }
+
+    function returnHeadline(size) {
+        if(size === "lg") {
+            return <h1 className={introCSS.headlineLg}>{headline}</h1>
+        } else if (size === "sm") {
+            return <h1 className={introCSS.headlineSm}>{headline}</h1>
         }
 
     }
@@ -28,10 +43,9 @@ function Intro() {
             <div className={introCSS.pictureContainer}>
             {getImage(width)}
                 <div className={introCSS.text}>
-                    <h1 className={introCSS.headline}>Great coffee made simple.</h1>
-                    <p className={introCSS.paragraph}>Start your mornings with the world’s best coffees. Try our expertly curated artisan 
-                                                    coffees from our best roasters delivered directly to your door, at your schedule.</p>
-                <Button className={introCSS.planButton} variant="custom">Create your plan</Button>
+                   {returnHeadline(headlineSize)}
+                    <p className={introCSS.paragraph}>{paragraph}</p>
+                {btn ? <Button className={introCSS.planButton} variant="custom">Create your plan</Button> : null }
                 </div>
        
             
