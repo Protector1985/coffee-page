@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width:350px;
+}
+
+.subHead {
+    font-family: 'Fraunces', serif;
+    color: #333D4B;
+    margin-bottom: 6%;
+    font-size: 1.9rem;
+}
+
+.icon {
+    margin-bottom: 13%;
+}
+
+p {
+    color: #333D4B;
+    margin-bottom: 0;
+    line-height: 2rem;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
