@@ -1,0 +1,16 @@
+.containerActive {
+    background-color: #F4F1EB
+
+}
+
+.containerDeactivated {
+    background-color: #F4F1EB
+}
+
+.headline {
+    font-family: 'Fraunces', serif;
+}
+
+.paragraph {
+    font-family: 'Fraunces', serif;
+}
