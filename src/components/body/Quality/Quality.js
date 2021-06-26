@@ -37,8 +37,8 @@ function Quality() {
         <div className={qualityCSS.container}>
             {getImage(width)}
             <div className={qualityCSS.textContainer}>
-                <Headline />
-                <Paragraph />
+                <Headline key="Quality_Headline" />
+                <Paragraph key="Quality_Paragraph" />
             </div>
             
         </div>

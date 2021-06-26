@@ -39,9 +39,9 @@ function About() {
 
     return (
         <div className={bodyCSS.bodyWrapper}>
-            <Intro headline={introHeadline} paragraph={introParagraph} pictureArr={picArray} btn={false} headlineSize="sm" />
-            <Commitment />
-            <Quality />
+            <Intro key="intro" headline={introHeadline} paragraph={introParagraph} pictureArr={picArray} btn={false} headlineSize="sm" />
+            <Commitment key="commitment" />
+            <Quality key="quality"/>
             
             <div className={bodyCSS.mainHeadContainer}>
                 <h5 className={bodyCSS.mainHead}>Our headquarters</h5> 
@@ -52,6 +52,7 @@ function About() {
                     console.log(item)
                     return (
                             <Headquarters 
+                                key={`${item.headline}_headquarters`}
                                 Icon={item.pic}
                                 headline={item.headline} 
                                 street={item.street} 

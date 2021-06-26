@@ -26,7 +26,7 @@ function Whysection() {
                     <p className={whyCSS.paragraph}>A large part of our role is choosing which particular coffees will be featured  in our range. This means working closely with the best coffee growers to give you a more impactful experience on every level.</p>
                         <div className={whyCSS.whyboxes}> 
                             {whyBoxItems.map((item) => {
-                                return <Whybox icon={item.icon} headline={item.headline} paragraph={item.paragraph} />
+                                return <Whybox key={`${item.headline}_Whybox`} icon={item.icon} headline={item.headline} paragraph={item.paragraph} />
                             })}
                         </div>
                 </div>

@@ -50,31 +50,19 @@ function Header() {
         <div>
         <Navbar className={headerCSS.menubar} color="light" light expand="md">
             <NavbarBrand className={headerCSS.brand}><Logo className={headerCSS.logo} ref={svgRef} /></NavbarBrand>
-            <NavbarToggler className={burgerCSS.toggleButton} onClick={toggle} />
+                <NavbarToggler className={burgerCSS.toggleButton} onClick={toggle} />
                 <Collapse  isOpen={isOpen} navbar>
-            <Nav className='mr-auto' navbar>
-                
-                <NavItem>
-                   <Link to="/">
-                        <NavLink className={`${headerCSS.linkItem} ${headerCSS.firstItem}`}>HOME</NavLink>
-                   </Link> 
-                </NavItem>
-                
-                <NavItem>
-                    <Link to="/about">
-                        <NavLink className={headerCSS.linkItem}>ABOUT US</NavLink>
-                    </Link>
-                    
-                </NavItem>
-                
-                <NavItem>
-                    <Link to="/plan" >
-                        <NavLink className={headerCSS.linkItem}>CREATE YOUR PLAN</NavLink>
-                    </Link>
-                    
-                </NavItem>
-            
-            </Nav>
+                <Nav className='mr-auto' navbar>
+                    <NavItem>
+                        <NavLink className={`${headerCSS.linkItem} ${headerCSS.firstItem}`} href="/">HOME</NavLink>  
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className={headerCSS.linkItem} href="about">ABOUT US</NavLink>
+                    </NavItem>
+                    <NavItem>
+                            <NavLink className={headerCSS.linkItem} href="/plan">CREATE YOUR PLAN</NavLink>
+                    </NavItem>
+                </Nav>
             </Collapse>
         </Navbar>
         </div>

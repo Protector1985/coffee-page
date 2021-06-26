@@ -35,7 +35,7 @@ function Howsection({theme}) {
             <h4 className={returnHeadClassName(theme)}>How it works</h4>
             <div className={returnContainerClassName(theme)}>
                 {steps.map((step, index) => {
-                    return <Howbox index={index} step={step.step} headline={step.headline} paragraph={step.paragraph} theme={theme} />
+                    return <Howbox key={step.headline} index={index} step={step.step} headline={step.headline} paragraph={step.paragraph} theme={theme} />
                 })} 
             </div>
         </div>
