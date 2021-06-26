@@ -1,19 +1,38 @@
 import React, {Fragment} from 'react';
+import {Switch, Route, BrowserRouter as Router} from 'react-router-dom'
 
 import masterCSS from './master.module.css'
 import Header from './components/header/Header'
 import Home from './components/body/Home'
 import About from './components/body/About'
+import CreatePlan from './components/body/CreatePlan'
 
 
 
 function App() {
   return (
-      <div className={masterCSS.container}>
-        <Header />
-        <About />
-        {/* <Home / > */}
-      </div>
+    <Router>
+        <Switch>
+        <div className={masterCSS.container}>
+            <Header />
+            
+            <Route exact path="/">
+                <Home />
+            </Route>
+            
+            <Route path="/about">
+              <About />
+            </Route>
+
+            <Route path ="/plan" >
+              <CreatePlan />
+            </Route>
+          
+          </div>
+        </Switch>
+    </Router>
+    
+      
       
     
     

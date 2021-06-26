@@ -27,7 +27,7 @@ function Home() {
                 <Intro headline={introHeadline} paragraph={introParagraph} pictureArr={picArray} btn={true} headlineSize="lg" />
                 <Collection />
                 <Whysection />   
-                <Howsection />
+                <Howsection theme="light" />
                 <div className={bodyCSS.push}></div>
                 <Footer/>
             </div>

@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react'
 import {Navbar, NavbarBrand, Nav, NavLink, Collapse, NavItem, NavbarToggler } from 'reactstrap'
+import {Link, BrowserRouter as Router} from 'react-router-dom'
 import {ReactComponent as Symbol} from '../../assets/shared/mobile/icon-hamburger.svg'
 
 import {ReactComponent as Logo} from '../../assets/shared/desktop/logo.svg'
@@ -45,28 +46,39 @@ function Header() {
     
 
     return (
+        
         <div>
         <Navbar className={headerCSS.menubar} color="light" light expand="md">
             <NavbarBrand className={headerCSS.brand}><Logo className={headerCSS.logo} ref={svgRef} /></NavbarBrand>
             <NavbarToggler className={burgerCSS.toggleButton} onClick={toggle} />
-               
-            
                 <Collapse  isOpen={isOpen} navbar>
             <Nav className='mr-auto' navbar>
+                
                 <NavItem>
-                    <NavLink className={`${headerCSS.linkItem} ${headerCSS.firstItem}`} href="/components/">HOME</NavLink>
+                   <Link to="/">
+                        <NavLink className={`${headerCSS.linkItem} ${headerCSS.firstItem}`}>HOME</NavLink>
+                   </Link> 
                 </NavItem>
+                
                 <NavItem>
-                    <NavLink className={headerCSS.linkItem} href="/components/">ABOUT US</NavLink>
+                    <Link to="/about">
+                        <NavLink className={headerCSS.linkItem}>ABOUT US</NavLink>
+                    </Link>
+                    
                 </NavItem>
+                
                 <NavItem>
-                    <NavLink className={headerCSS.linkItem} href="/components/">CREATE YOUR PLAN</NavLink>
+                    <Link to="/plan" >
+                        <NavLink className={headerCSS.linkItem}>CREATE YOUR PLAN</NavLink>
+                    </Link>
+                    
                 </NavItem>
             
             </Nav>
             </Collapse>
         </Navbar>
         </div>
+       
     )
 }
 

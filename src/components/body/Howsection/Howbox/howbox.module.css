@@ -1,9 +1,19 @@
-.container {
+.containerLight {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: 87vw;
+    margin-bottom:10%;  
+}
+
+.containerDark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 87vw;
+    margin-bottom:10%;  
 }
 
 .step {
@@ -11,31 +21,59 @@
     font-size: 72px;
     color: #FDD6BA;
     margin-bottom: 25px;
+    margin-left: 50px;
 }
 
-.headline {
+.headlineLight {
     font-family: 'Fraunces', serif;
     font-size: 23px;
     margin-bottom: 20px;
     color: #333D4B;
+    margin-left: 50px;
 }
 
-.paragraph {
+.headlineDark {
+    font-family: 'Fraunces', serif;
+    font-size: 23px;
+    margin-bottom: 20px;
+    color: #FFFF;
+    margin-left: 50px;
+}
+
+.paragraphLight {
     font-family: 'Barlow', sans-serif;
     color: #333D4B;
     font-size: 14px;
     line-height:1.5rem;
+    margin-left: 50px;
+}
+
+.paragraphDark {
+    font-family: 'Barlow', sans-serif;
+    color: #FFFF;
+    font-size: 14px;
+    line-height:1.5rem;
+    margin-left: 50px;
 }
 
 
 @media (min-width: 768px) {
-    .container {
+    .containerLight {
         flex-basis: 27%;
         align-items:flex-start;
         text-align: left;
         margin-right: 6%;
+        background-clip:border-box;
     }
-    .circle {
+
+    .containerDark {
+        flex-basis: 27%;
+        align-items:flex-start;
+        text-align: left;
+        margin-right: 6%;
+        background-clip:border-box;
+    }
+    .circleLight {
         height: 25px;
         width: 25px;
         border-radius: 50%;
@@ -43,13 +81,39 @@
         border: 1px solid;
         margin-bottom: 50px;
         margin-top: 10px;
+        margin-left: 25px;
         background-color: white;
         z-index:100
     }
-    .line {
-        border-top: 1.5px solid #FDD6BA;
+
+    .circleDark {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        border: 2px solid #0E8784;
+        margin-bottom: 50px;
+        margin-top: 80px;
+        margin-left: 50px;
+        background-color: transparent;
+        z-index:100
+    }
+
+    .lineLight {
+        border-top: 3px solid ;
+        border-color: rgb(255, 190, 92);
         width: 122%;
         margin-top: -63px;
+        margin-left: 50px;
+        z-index: 90;
+        margin-bottom:70px;
+    }
+
+    .lineDark {
+        border-top: 3px solid ;
+        border-color: rgb(255, 190, 92);
+        width: 122%;
+        margin-top: -63px;
+        margin-left: 50px;
         z-index: 90;
         margin-bottom:70px;
     }

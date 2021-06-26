@@ -42,12 +42,12 @@ function About() {
             <Intro headline={introHeadline} paragraph={introParagraph} pictureArr={picArray} btn={false} headlineSize="sm" />
             <Commitment />
             <Quality />
+            
             <div className={bodyCSS.mainHeadContainer}>
-            <h5 className={bodyCSS.mainHead}>Our headquarters</h5> 
+                <h5 className={bodyCSS.mainHead}>Our headquarters</h5> 
             </div>
             
             <div className={bodyCSS.headquarterContainer}>
-            
                 {headquartersArr.map((item) => {
                     console.log(item)
                     return (
