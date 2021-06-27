@@ -1,16 +1,40 @@
 .containerActive {
-    background-color: #F4F1EB
+    background-color: #0E8784;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    width: 100%;
+    width: 32%;
+    height: 250px
 
 }
 
 .containerDeactivated {
-    background-color: #F4F1EB
+    background-color: #F4F1EB;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    width: 32%;
+    height: 250px;
 }
 
 .headline {
     font-family: 'Fraunces', serif;
+    margin-top: 50px;
+    margin-left: 25px;
 }
 
 .paragraph {
-    font-family: 'Fraunces', serif;
+    font-family: 'Barlow', sans-serif;
+    margin-left:25px;
+}
+
+@media (max-width: 540px) {
+    .containerDeactivated {
+        width: 90%;
+        height: 140px;
+    }
+
+    .containerActive {
+        width: 90%;
+        height: 140px;
+    }
 }

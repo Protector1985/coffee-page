@@ -10,7 +10,6 @@ import useDimensions from '../utility/sizing/useDimensions'
 function Footer() {
     const {height, width} = useDimensions()
 
-    console.log(width)
     
 
     return (

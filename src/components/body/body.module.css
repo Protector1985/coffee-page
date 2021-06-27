@@ -8,6 +8,29 @@
     width: 100vw;
 }
 
+.choiceMasterContainer {
+    display:flex;
+    flex-direction: row;
+    width: 90%;
+    margin-bottom: 25%;
+    margin-top: 5%;
+}
+
+.choiceButtonContainer {
+    display:flex;
+    flex-direction: column;
+    flex-basis: 70%;
+}
+
+.choiceIndex {
+    flex-basis: 30%;
+    margin-left: 5%;
+}
+
+.dividerLine {
+    width: 65%;
+}
+
 .push {
     height: 400px;
 }
@@ -31,6 +54,41 @@
 
 .mainHeadContainer {
     width: 90%;
+}
+
+.drinkChoice {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width:100%;
+}
+
+.typeChoice {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.amountChoice {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.grindChoice {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.frequencyChoice {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
