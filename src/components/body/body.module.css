@@ -8,6 +8,35 @@
     width: 100vw;
 }
 
+.planButtonActive {
+    width: 290px;
+    height: 80px;
+    font-family: 'Fraunces', serif; 
+    font-size: 1.4rem;
+    align-self: flex-end;
+    margin-top: 40px;
+    background-color: #0E8784;
+    border:none;
+}
+
+.planButtonDeactivated {
+    width: 290px;
+    height: 80px;
+    font-family: 'Fraunces', serif; 
+    font-size: 1.4rem;
+    align-self: flex-end;
+    margin-top: 40px;
+    background-color: #E2DEDB;
+    border:none;
+}
+
+.btnGroupHeadline {
+    margin-bottom: 2%;
+    font-family: 'Fraunces', serif; 
+    color: #83888F;
+    font-size: 2.0rem;
+}
+
 .choiceMasterContainer {
     display:flex;
     flex-direction: row;
@@ -22,6 +51,33 @@
     flex-basis: 70%;
 }
 
+.endStatementContainer {
+    height: 208px;
+    background-color: #2C343E;
+    border-radius: 10px;
+}
+
+.orderSummary {
+    color: #FFFFFF70;
+    margin-left: 6%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    font-size: 1rem;
+    font-family: 'Barlow', sans-serif;
+}
+
+.orderSummaryText {
+    color: white;
+    font-family: 'Fraunces', serif;
+    margin-left: 6%;
+    margin-right: 6%;
+    font-size: 1.5rem;
+}
+
+.placeholder {
+    color: #0E8784;
+    font-family: 'Fraunces', serif;
+}
 .choiceIndex {
     flex-basis: 30%;
     margin-left: 5%;
@@ -31,9 +87,7 @@
     width: 65%;
 }
 
-.push {
-    height: 400px;
-}
+
 
 .mainHead {
     font-family: 'Fraunces', serif;
@@ -61,6 +115,8 @@
     flex-direction:row;
     justify-content: space-between;
     width:100%;
+    margin-bottom: 5%;
+    margin-top: 2%;
 }
 
 .typeChoice {
@@ -68,6 +124,8 @@
     flex-direction:row;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 5%;
+    margin-top: 2%;
 }
 
 .amountChoice {
@@ -75,6 +133,8 @@
     flex-direction:row;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 5%;
+    margin-top: 2%;
 }
 
 .grindChoice {
@@ -82,6 +142,8 @@
     flex-direction:row;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 5%;
+    margin-top: 2%;
 }
 
 .frequencyChoice {
@@ -89,6 +151,25 @@
     flex-direction:row;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+
+.push {
+    height: 150px;
+}
+
+@media (max-width: 1025px) {
+    .choiceIndex {
+        display:none;
+    }
+    .choiceButtonContainer {
+        flex-basis: 100%;
+    }
+
+    .push {
+        height: 270px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -102,6 +183,8 @@
         justify-content:flex-start;
     }
 
+    
+
 }
 
 @media (max-width: 768px) {
@@ -112,5 +195,41 @@
 
     .headquarterContainer {
         justify-content: center;
+    }
+
+    .push {
+        height: 300px;
+    }
+
+
+}
+
+@media(max-width: 540px) {
+    .choiceButtonContainer {
+        align-items: center;
+    }
+
+    .drinkChoice {
+        flex-direction: column;
+    }
+
+    .typeChoice {
+        flex-direction: column;
+    }
+
+    .amountChoice {
+        flex-direction: column;
+    }
+
+    .grindChoice {
+        flex-direction:column;
+    }
+
+    .frequencyChoice {
+        flex-direction: column;
+    }
+    
+    .push {
+        height: 320px;
     }
 }

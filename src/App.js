@@ -36,7 +36,7 @@ export const DisplayLocation = () => {
           
           </div>
         </Switch>
-        <DisplayLocation /> 
+        {/* <DisplayLocation />  */}
     </Router>
     
       

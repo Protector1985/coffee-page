@@ -60,7 +60,7 @@ function Header() {
                         <NavLink className={headerCSS.linkItem} href="about">ABOUT US</NavLink>
                     </NavItem>
                     <NavItem>
-                            <NavLink className={headerCSS.linkItem} href="/plan">CREATE YOUR PLAN</NavLink>
+                            <NavLink className={headerCSS.linkItem} href="plan">CREATE YOUR PLAN</NavLink>
                     </NavItem>
                 </Nav>
             </Collapse>
