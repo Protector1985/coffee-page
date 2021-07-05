@@ -1,7 +1,7 @@
 import React from 'react'
 import choiceCSS from './ChoiceButton.module.css'
 
-function ChoiceButton({headline, text, setTurnOn, active}) {
+function ChoiceButton({headline, text, setTurnOn, active, price}) {
     const choiceNode = React.useRef();
 
     function returnActiveStyling() {
@@ -19,7 +19,7 @@ function ChoiceButton({headline, text, setTurnOn, active}) {
         const clickedTxt = choiceNode.current.children[1].innerText
         let rand1 = Math.floor(Math.random() * 10000)
         rand1 = rand1.toString()
-        setTurnOn(()=> ({clickedElement: clickedElement, bodyTxt: clickedTxt, flag: rand1, active: active }))
+        setTurnOn(()=> ({clickedElement: clickedElement, bodyTxt: clickedTxt, flag: rand1, active: active, price:price }))
     }
     
     

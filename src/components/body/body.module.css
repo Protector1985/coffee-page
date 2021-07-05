@@ -8,6 +8,12 @@
     width: 100vw;
 }
 
+.modalHeader {
+    background-color: #333D4B;
+    color: #FFFFFF;
+    font-family: 'Fraunces', serif; 
+}
+
 .planButtonActive {
     width: 290px;
     height: 80px;
@@ -30,6 +36,28 @@
     border:none;
 }
 
+.checkoutButton {
+    background-color: #0E8784;
+    color: #FFFFFF;
+    right: 0px;
+    margin-left: 5%;
+    width: 200px;
+}
+
+.valueText{
+    font-family: 'Fraunces', serif; 
+}
+
+.valueHere{
+    margin-right: 4%;
+}
+
+.buttonDivMax {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    
+}
 .btnGroupHeadline {
     margin-bottom: 2%;
     font-family: 'Fraunces', serif; 
@@ -72,6 +100,25 @@
     margin-left: 6%;
     margin-right: 6%;
     font-size: 1.5rem;
+}
+
+.orderSummaryTextModal {
+    color: #83888F;
+    font-family: 'Fraunces', serif;
+    margin-left: 6%;
+    margin-right: 6%;
+    font-size: 1.5rem;
+    width:90%;
+    margin-left: 5%;
+}
+
+.orderSummaryDisclaimer {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    width:90%;
+    margin-left:5%;
+    margin-bottom:5%;
 }
 
 .placeholder {
@@ -201,7 +248,18 @@
         height: 300px;
     }
 
+    .checkoutButton {
+        margin-left: none;
+        width: 85%;
+    }
 
+
+}
+
+@media(max-width: 410px) {
+    .orderSummaryText {
+        font-size: 1.3rem;
+    }
 }
 
 @media(max-width: 540px) {
@@ -232,4 +290,19 @@
     .push {
         height: 320px;
     }
+
+    .planButtonDeactivated {
+        margin: 4% auto;
+     }
+
+     .planButtonActive { 
+         margin: 4% auto;
+     }
+    
+     .checkoutButton {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 6%;
+
+     }
 }
