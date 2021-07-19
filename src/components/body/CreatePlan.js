@@ -35,9 +35,6 @@ function CreatePlan(props) {
     })
     const {width, heigth} = useDimensions();
 
-    
-
-
     const toggle = () => setModal(!modal)
     
     const headline = "Create a plan";
@@ -65,7 +62,6 @@ function CreatePlan(props) {
     
         for(let i = 0 ; i < how.length ; i ++) {
             if(objArr[i].headline === turnedOnButton.clickedElement) {
-                
                 const dataCopy = [
                     ...objArr,
                 ]
@@ -93,15 +89,12 @@ function CreatePlan(props) {
                         }
                         break;
                 } 
-                stateHook(() => dataCopy)
-            
+                stateHook(() => dataCopy)  
         }
     }
 
     }
 
-    console.log(price)
-    
     React.useEffect(() => {
         console.log(turnedOnButton)
         
@@ -246,7 +239,7 @@ function CreatePlan(props) {
                                         <ModalBody className={bodyCSS.modalBody}>
                                             <h4 className={bodyCSS.orderSummaryTextModal}>"I drink my coffee with using  <span className={bodyCSS.placeholder}>{endStatementHow}</span> with a <span className={bodyCSS.placeholder}>{endStatementType}</span> type of bean. <span className={bodyCSS.placeholder}>{endStatementAmount}</span> ground ala <span className={bodyCSS.placeholder}>{endStatementGrind}</span> sent to me <span className={bodyCSS.placeholder}>{endStatementFrequency}</span>"</h4>
                                             <p className={bodyCSS.orderSummaryDisclaimer}>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. </p>
-                                         {width > 768 ? <div className={bodyCSS.buttonDivMax}> <span className={bodyCSS.valueHere}><p className={bodyCSS.valueText}>{`$${(((price.how + price.type + price.grind + price.frequency) * price.amount) * price.multiplyer).toFixed(2)}/mo`}</p></span>  <Button className={bodyCSS.checkoutButton}>Checkout</Button>  </div>: <Button className={bodyCSS.checkoutButton}>{`Checkout - $${(((price.how + price.type + price.grind + price.frequency) * price.amount) * price.multiplyer).toFixed(2)}`}</Button> }   
+                                         {width > 768 ? <div className={bodyCSS.buttonDivMax}> <span className={bodyCSS.valueHere}><p className={bodyCSS.valueText}>{`$${(((price.how + price.type + price.grind + price.frequency) * price.amount) * price.multiplyer).toFixed(2)}/mo`}</p></span>  <Button onClick={()=> setModal(false)} className={bodyCSS.checkoutButton}>Checkout</Button>  </div>: <Button className={bodyCSS.checkoutButton}>{`Checkout - $${(((price.how + price.type + price.grind + price.frequency) * price.amount) * price.multiplyer).toFixed(2)}`}</Button> }   
                                         </ModalBody>
                                 </Modal>    
                                 <div className={bodyCSS.push}></div>  

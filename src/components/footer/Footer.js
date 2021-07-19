@@ -17,13 +17,13 @@ function Footer() {
             <Logo className={footerCSS.logo} />
              <Nav className={footerCSS.nav} vertical={width >= 1025 ? false : true} >
                 <NavItem>
-                    <NavLink className={footerCSS.link} href="#">HOME</NavLink>
+                    <NavLink className={footerCSS.link} href="/">HOME</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink className={footerCSS.link} href="#">ABOUT US</NavLink>
+                    <NavLink className={footerCSS.link} href="about">ABOUT US</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink className={footerCSS.link} href="#">CREATE YOUR PLAN</NavLink>
+                    <NavLink className={footerCSS.link} href="plan">CREATE YOUR PLAN</NavLink>
                 </NavItem>
             </Nav>
            <span className= {footerCSS.socialContainer}><Facebook className={footerCSS.social} /> <Instagram className={footerCSS.social} /> <Twitter className={footerCSS.social} /></span>
