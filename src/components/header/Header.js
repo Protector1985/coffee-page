@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react'
 import {Navbar, NavbarBrand, Nav, NavLink, Collapse, NavItem, NavbarToggler } from 'reactstrap'
-import {Link, BrowserRouter as Router} from 'react-router-dom'
+import {Link, BrowserRouter as Router, NavLink as RRNav} from 'react-router-dom'
 import {ReactComponent as Symbol} from '../../assets/shared/mobile/icon-hamburger.svg'
 
 import {ReactComponent as Logo} from '../../assets/shared/desktop/logo.svg'
@@ -54,13 +54,13 @@ function Header() {
                 <Collapse  isOpen={isOpen} navbar>
                 <Nav className='mr-auto' navbar>
                     <NavItem>
-                        <NavLink className={`${headerCSS.linkItem} ${headerCSS.firstItem}`} href="/">HOME</NavLink>  
+                        <NavLink  className={`${headerCSS.linkItem} ${headerCSS.firstItem}`} href="/">HOME</NavLink>  
                     </NavItem>
                     <NavItem>
-                        <Link className={headerCSS.linkItem} to="/about">ABOUT US</Link>
+                        <NavLink tag={RRNav} className={headerCSS.linkItem} to="/about">ABOUT US</NavLink>
                     </NavItem>
                     <NavItem>
-                            <Link className={headerCSS.linkItem} to="/plan">CREATE YOUR PLAN</Link>
+                        <NavLink tag={RRNav} className={headerCSS.linkItem} to="/plan">CREATE YOUR PLAN</NavLink>
                     </NavItem>
                 </Nav>
             </Collapse>
