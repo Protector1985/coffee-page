@@ -17,7 +17,7 @@ export const DisplayLocation = () => {
 
  export function App() {
   return (
-    <Router>
+    <Router basename={"https://coffee-page-8ifiq.ondigitalocean.app/"}>
         <Switch>
         <div className={masterCSS.container}>
             <Header />
