@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {Switch, Route, BrowserRouter as Router, useLocation} from 'react-router-dom'
+import {Switch, Route, HashRouter as Router, useLocation} from 'react-router-dom'
 
 import masterCSS from './master.module.css'
 import Header from './components/header/Header'
@@ -17,7 +17,7 @@ export const DisplayLocation = () => {
 
  export function App() {
   return (
-    <Router basename={"https://coffee-page-8ifiq.ondigitalocean.app/"}>
+    <Router>
         <Switch>
         <div className={masterCSS.container}>
             <Header />
@@ -26,11 +26,11 @@ export const DisplayLocation = () => {
                 <Home />
             </Route>
             
-            <Route path="/about">
+            <Route exact path="/about">
               <About />
             </Route>
 
-            <Route path ="/plan" >
+            <Route exact path ="/plan" >
               <CreatePlan />
             </Route>
           

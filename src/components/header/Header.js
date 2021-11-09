@@ -57,10 +57,10 @@ function Header() {
                         <NavLink className={`${headerCSS.linkItem} ${headerCSS.firstItem}`} href="/">HOME</NavLink>  
                     </NavItem>
                     <NavItem>
-                        <NavLink className={headerCSS.linkItem} href="/about">ABOUT US</NavLink>
+                        <Link className={headerCSS.linkItem} to="/about">ABOUT US</Link>
                     </NavItem>
                     <NavItem>
-                            <NavLink className={headerCSS.linkItem} href="/plan">CREATE YOUR PLAN</NavLink>
+                            <Link className={headerCSS.linkItem} to="/plan">CREATE YOUR PLAN</Link>
                     </NavItem>
                 </Nav>
             </Collapse>
